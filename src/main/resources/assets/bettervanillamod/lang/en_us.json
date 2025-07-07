@@ -1,0 +1,69 @@
+{
+  "block.bettervanillamod.amethyst_gem_ore": "Amethyst Gem Ore",
+
+
+  "item.bettervanillamod.amethyst_gem": "Amethyst Gem",
+
+  "item.bettervanillamod.wood_helmet": "Wood Helmet",
+  "item.bettervanillamod.wood_chestplate": "Wood Chestplate",
+  "item.bettervanillamod.wood_leggings": "Wood Leggings",
+  "item.bettervanillamod.wood_boots": "Wood Boots",
+
+  "item.bettervanillamod.stone_helmet": "Stone Helmet",
+  "item.bettervanillamod.stone_chestplate": "Stone Chestplate",
+  "item.bettervanillamod.stone_leggings": "Stone Leggings",
+  "item.bettervanillamod.stone_boots": "Stone Boots",
+
+  "item.bettervanillamod.netherrack_helmet": "Netherrack Helmet",
+  "item.bettervanillamod.netherrack_chestplate": "Netherrack Chestplate",
+  "item.bettervanillamod.netherrack_leggings": "Netherrack Leggings",
+  "item.bettervanillamod.netherrack_boots": "Netherrack Boots",
+  "item.bettervanillamod.netherrack_sword": "Netherrack Sword",
+  "item.bettervanillamod.netherrack_pickaxe": "Netherrack Pickaxe",
+  "item.bettervanillamod.netherrack_shovel": "Netherrack Shovel",
+  "item.bettervanillamod.netherrack_axe": "Netherrack Axe",
+  "item.bettervanillamod.netherrack_hoe": "Netherrack Hoe",
+
+  "item.bettervanillamod.copper_helmet": "Copper Helmet",
+  "item.bettervanillamod.copper_chestplate": "Copper Chestplate",
+  "item.bettervanillamod.copper_leggings": "Copper Leggings",
+  "item.bettervanillamod.copper_boots": "Copper Boots",
+  "item.bettervanillamod.copper_sword": "Copper Sword",
+  "item.bettervanillamod.copper_pickaxe": "Copper Pickaxe",
+  "item.bettervanillamod.copper_shovel": "Copper Shovel",
+  "item.bettervanillamod.copper_axe": "Copper Axe",
+  "item.bettervanillamod.copper_hoe": "Copper Hoe",
+
+  "item.bettervanillamod.amethyst_helmet": "Amethyst Helmet",
+  "item.bettervanillamod.amethyst_chestplate": "Amethyst Chestplate",
+  "item.bettervanillamod.amethyst_leggings": "Amethyst Leggings",
+  "item.bettervanillamod.amethyst_boots": "Amethyst Boots",
+  "item.bettervanillamod.amethyst_sword": "Amethyst Sword",
+  "item.bettervanillamod.amethyst_pickaxe": "Amethyst Pickaxe",
+  "item.bettervanillamod.amethyst_shovel": "Amethyst Shovel",
+  "item.bettervanillamod.amethyst_axe": "Amethyst Axe",
+  "item.bettervanillamod.amethyst_hoe": "Amethyst Hoe",
+
+  "item.bettervanillamod.quartz_helmet": "Quartz Helmet",
+  "item.bettervanillamod.quartz_chestplate": "Quartz Chestplate",
+  "item.bettervanillamod.quartz_leggings": "Quartz Leggings",
+  "item.bettervanillamod.quartz_boots": "Quartz Boots",
+  "item.bettervanillamod.quartz_sword": "Quartz Sword",
+  "item.bettervanillamod.quartz_pickaxe": "Quartz Pickaxe",
+  "item.bettervanillamod.quartz_shovel": "Quartz Shovel",
+  "item.bettervanillamod.quartz_axe": "Quartz Axe",
+  "item.bettervanillamod.quartz_hoe": "Quartz Hoe",
+
+  "item.bettervanillamod.emerald_helmet": "Emerald Helmet",
+  "item.bettervanillamod.emerald_chestplate": "Emerald Chestplate",
+  "item.bettervanillamod.emerald_leggings": "Emerald Leggings",
+  "item.bettervanillamod.emerald_boots": "Emerald Boots",
+  "item.bettervanillamod.emerald_sword": "Emerald Sword",
+  "item.bettervanillamod.emerald_pickaxe": "Emerald Pickaxe",
+  "item.bettervanillamod.emerald_shovel": "Emerald Shovel",
+  "item.bettervanillamod.emerald_axe": "Emerald Axe",
+  "item.bettervanillamod.emerald_hoe": "Emerald Hoe",
+
+
+  "creativetab.bettervanillamod.tab": "BetterVanillaMod Tab"
+}
