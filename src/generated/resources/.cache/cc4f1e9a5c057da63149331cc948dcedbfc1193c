@@ -1,0 +1,16 @@
+// 1.21.1	2025-07-07T11:32:02.8552535	Tags for minecraft:item mod id bettervanillamod
+b38347c102ec899213a4ada0ee8ffce8e1ef27e8 data/minecraft/tags/item/axes.json
+be36be1fe6d3c417de7f52952840558024186fcd data/minecraft/tags/item/enchantable/armor.json
+3de72e29696edeb0c7bf87c1bb7c61b223f89c35 data/minecraft/tags/item/enchantable/chest_armor.json
+be36be1fe6d3c417de7f52952840558024186fcd data/minecraft/tags/item/enchantable/durability.json
+98c5c16a2c68e72a49d4a5827364169cf7b7dadf data/minecraft/tags/item/enchantable/foot_armor.json
+bf6352da6f84f4da40ae8ff0a133efc66752878b data/minecraft/tags/item/enchantable/head_armor.json
+3470a8d139b437742554ac26174c252e8c992dd2 data/minecraft/tags/item/enchantable/leg_armor.json
+5bad268b841d1841b08b9e57795803eafff1aba2 data/minecraft/tags/item/enchantable/mining.json
+5bad268b841d1841b08b9e57795803eafff1aba2 data/minecraft/tags/item/enchantable/mining_loot.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/enchantable/sword.json
+9067ff4522108fc57d771f263c70bd72be00fbf6 data/minecraft/tags/item/hoes.json
+75e90ce05f8bc3dcc5a7066ce5ac92996c7e1981 data/minecraft/tags/item/pickaxes.json
+139fcff5afcdf39b21190f7e75d6681c0f43d437 data/minecraft/tags/item/shovels.json
+3af6becded58445b6d403d0a6e6a558da102e87d data/minecraft/tags/item/swords.json
+be36be1fe6d3c417de7f52952840558024186fcd data/minecraft/tags/item/trimmable_armor.json

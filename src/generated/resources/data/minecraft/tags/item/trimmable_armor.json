@@ -1,0 +1,32 @@
+{
+  "values": [
+    "bettervanillamod:wood_helmet",
+    "bettervanillamod:wood_chestplate",
+    "bettervanillamod:wood_leggings",
+    "bettervanillamod:wood_boots",
+    "bettervanillamod:stone_helmet",
+    "bettervanillamod:stone_chestplate",
+    "bettervanillamod:stone_leggings",
+    "bettervanillamod:stone_boots",
+    "bettervanillamod:netherrack_helmet",
+    "bettervanillamod:netherrack_chestplate",
+    "bettervanillamod:netherrack_leggings",
+    "bettervanillamod:netherrack_boots",
+    "bettervanillamod:copper_helmet",
+    "bettervanillamod:copper_chestplate",
+    "bettervanillamod:copper_leggings",
+    "bettervanillamod:copper_boots",
+    "bettervanillamod:amethyst_helmet",
+    "bettervanillamod:amethyst_chestplate",
+    "bettervanillamod:amethyst_leggings",
+    "bettervanillamod:amethyst_boots",
+    "bettervanillamod:quartz_helmet",
+    "bettervanillamod:quartz_chestplate",
+    "bettervanillamod:quartz_leggings",
+    "bettervanillamod:quartz_boots",
+    "bettervanillamod:emerald_helmet",
+    "bettervanillamod:emerald_chestplate",
+    "bettervanillamod:emerald_leggings",
+    "bettervanillamod:emerald_boots"
+  ]
+}

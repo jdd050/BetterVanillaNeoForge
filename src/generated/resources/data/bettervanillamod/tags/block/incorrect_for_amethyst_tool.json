@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#bettervanillamod:needs_amethyst_tool"
+  ],
+  "values": [
+    "#minecraft:incorrect_for_iron_tool"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "bettervanillamod:block/amethyst_gem_ore"
+  }
+}

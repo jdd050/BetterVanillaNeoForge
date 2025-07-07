@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "minecraft:emerald"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X ",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "bettervanillamod:emerald_sword"
+  }
+}
