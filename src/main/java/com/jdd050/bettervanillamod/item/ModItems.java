@@ -1,6 +1,7 @@
 package com.jdd050.bettervanillamod.item;
 
 import com.jdd050.bettervanillamod.BetterVanillaMod;
+import com.jdd050.bettervanillamod.item.custom.HammerItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -8,6 +9,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
     // fields
+    public static final int HAMMER_ATK_DMG = 8;
+    public static final float HAMMER_ATK_SPD = -3.6f;
+
     public static final int SWORD_ATK_DMG = 3;
     public static final float SWORD_ATK_SPD = -2.4f;
     public static final int PICKAXE_ATK_DMG = 1;
@@ -48,6 +52,9 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                             .durability((ArmorItem.Type.BOOTS.getDurability(4))))
     );
+    public static final DeferredItem<HammerItem> WOOD_HAMMER = ITEMS.register("wood_hammer",
+            () -> new HammerItem(Tiers.WOOD, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.WOOD, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
     /* Custom Equipment - Stone Tier */
     public static final DeferredItem<Item> STONE_HELMET = ITEMS.register("stone_helmet",

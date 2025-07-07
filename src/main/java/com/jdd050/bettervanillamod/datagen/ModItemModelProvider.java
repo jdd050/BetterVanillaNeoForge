@@ -46,7 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
             String[] parts = item.getId().toString().split("_");
             for (String part : parts) {
                 switch (part) {
-                    case "sword", "pickaxe", "shovel", "axe", "hoe":
+                    case "sword", "pickaxe", "shovel", "axe", "hoe", "hammer":
                         handheldItem(item);
                         break;
                     case "helmet", "chestplate", "leggings", "boots":
