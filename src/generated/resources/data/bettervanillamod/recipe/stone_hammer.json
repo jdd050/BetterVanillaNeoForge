@@ -4,15 +4,18 @@
   "key": {
     "X": {
       "item": "minecraft:cobblestone"
+    },
+    "Y": {
+      "item": "minecraft:stick"
     }
   },
   "pattern": [
-    "   ",
-    "X X",
-    "X X"
+    "XXX",
+    "XYX",
+    " Y "
   ],
   "result": {
     "count": 1,
-    "id": "bettervanillamod:stone_boots"
+    "id": "bettervanillamod:stone_hammer"
   }
 }

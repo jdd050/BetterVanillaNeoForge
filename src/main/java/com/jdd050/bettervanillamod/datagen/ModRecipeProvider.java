@@ -183,6 +183,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
     }
 
+    private static void makeHammerRecipe(RecipeOutput pRecipeOutput, Item result, TagKey<Item> material, String unlockRequirement) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern(" Y ")
+                .define('X', material)
+                .define('Y', Items.STICK)
+                .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
+    }
+
+    private static void makeHammerRecipe(RecipeOutput pRecipeOutput, Item result, Item material, String unlockRequirement) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, result)
+                .pattern("XXX")
+                .pattern("XYX")
+                .pattern(" Y ")
+                .define('X', material)
+                .define('Y', Items.STICK)
+                .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
+    }
+
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         // smelting list
@@ -198,12 +218,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeChestplateRecipe(pRecipeOutput, ModItems.WOOD_CHESTPLATE.get(), ItemTags.PLANKS, "has_planks");
         makeLeggingRecipe(pRecipeOutput, ModItems.WOOD_LEGGINGS.get(), ItemTags.PLANKS, "has_planks");
         makeBootsRecipe(pRecipeOutput, ModItems.WOOD_BOOTS.get(), ItemTags.PLANKS, "has_planks");
+        makeHammerRecipe(pRecipeOutput, ModItems.WOOD_HAMMER.get(), ItemTags.PLANKS, "has_planks");
 
         /* STONE TIER RECIPES */
-        makeHelmetRecipe(pRecipeOutput, ModItems.STONE_HELMET.get(), Items.STONE, "has_stone");
-        makeChestplateRecipe(pRecipeOutput, ModItems.STONE_CHESTPLATE.get(), Items.STONE, "has_stone");
-        makeLeggingRecipe(pRecipeOutput, ModItems.STONE_LEGGINGS.get(), Items.STONE, "has_stone");
-        makeBootsRecipe(pRecipeOutput, ModItems.STONE_BOOTS.get(), Items.STONE, "has_stone");
+        makeHelmetRecipe(pRecipeOutput, ModItems.STONE_HELMET.get(), Items.COBBLESTONE, "has_stone");
+        makeChestplateRecipe(pRecipeOutput, ModItems.STONE_CHESTPLATE.get(), Items.COBBLESTONE, "has_stone");
+        makeLeggingRecipe(pRecipeOutput, ModItems.STONE_LEGGINGS.get(), Items.COBBLESTONE, "has_stone");
+        makeBootsRecipe(pRecipeOutput, ModItems.STONE_BOOTS.get(), Items.COBBLESTONE, "has_stone");
+        makeHammerRecipe(pRecipeOutput, ModItems.STONE_HAMMER.get(), Items.COBBLESTONE, "has_stone");
 
 
         /* NETHERRACK TIER RECIPES */
@@ -219,6 +241,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeShovelRecipe(pRecipeOutput, ModItems.NETHERRACK_SHOVEL.get(), Items.NETHERRACK, "has_netherrack");
         makeAxeRecipe(pRecipeOutput, ModItems.NETHERRACK_AXE.get(), Items.NETHERRACK, "has_netherrack");
         makeHoeRecipe(pRecipeOutput, ModItems.NETHERRACK_HOE.get(), Items.NETHERRACK, "has_netherrack");
+        makeHammerRecipe(pRecipeOutput, ModItems.NETHERRACK_HAMMER.get(), Items.NETHERRACK, "has_netherrack");
 
         /* COPPER TIER RECIPES */
         // armor
@@ -233,6 +256,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeShovelRecipe(pRecipeOutput, ModItems.COPPER_SHOVEL.get(), Items.COPPER_INGOT, "has_copper_ingot");
         makeAxeRecipe(pRecipeOutput, ModItems.COPPER_AXE.get(), Items.COPPER_INGOT, "has_copper_ingot");
         makeHoeRecipe(pRecipeOutput, ModItems.COPPER_HOE.get(), Items.COPPER_INGOT, "has_copper_ingot");
+        makeHammerRecipe(pRecipeOutput, ModItems.COPPER_HAMMER.get(), Items.COPPER_INGOT, "has_copper_ingot");
 
         /* AMETHYST TIER RECIPES */
         // armor
@@ -247,6 +271,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeShovelRecipe(pRecipeOutput, ModItems.AMETHYST_SHOVEL.get(), ModItems.AMETHYST_GEM.get(), "has_amethyst_gem");
         makeAxeRecipe(pRecipeOutput, ModItems.AMETHYST_AXE.get(), ModItems.AMETHYST_GEM.get(), "has_amethyst_gem");
         makeHoeRecipe(pRecipeOutput, ModItems.AMETHYST_HOE.get(), ModItems.AMETHYST_GEM.get(), "has_amethyst_gem");
+        makeHammerRecipe(pRecipeOutput, ModItems.AMETHYST_HAMMER.get(), ModItems.AMETHYST_GEM.get(), "has_amethyst_gem");
 
         /* QUARTZ TIER RECIPES */
         // armor
@@ -261,6 +286,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeShovelRecipe(pRecipeOutput, ModItems.QUARTZ_SHOVEL.get(), Items.QUARTZ, "has_quartz");
         makeAxeRecipe(pRecipeOutput, ModItems.QUARTZ_AXE.get(), Items.QUARTZ, "has_quartz");
         makeHoeRecipe(pRecipeOutput, ModItems.QUARTZ_HOE.get(), Items.QUARTZ, "has_quartz");
+        makeHammerRecipe(pRecipeOutput, ModItems.QUARTZ_HAMMER.get(), Items.QUARTZ, "has_quartz");
 
         /* EMERALD TIER RECIPES */
         // armor
@@ -275,6 +301,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeShovelRecipe(pRecipeOutput, ModItems.EMERALD_SHOVEL.get(), Items.EMERALD, "has_emerald");
         makeAxeRecipe(pRecipeOutput, ModItems.EMERALD_AXE.get(), Items.EMERALD, "has_emerald");
         makeHoeRecipe(pRecipeOutput, ModItems.EMERALD_HOE.get(), Items.EMERALD, "has_emerald");
+        makeHammerRecipe(pRecipeOutput, ModItems.EMERALD_HAMMER.get(), Items.EMERALD, "has_emerald");
     }
 
     /*

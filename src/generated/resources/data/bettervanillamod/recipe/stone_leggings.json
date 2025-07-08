@@ -3,7 +3,7 @@
   "category": "equipment",
   "key": {
     "X": {
-      "item": "minecraft:stone"
+      "item": "minecraft:cobblestone"
     }
   },
   "pattern": [

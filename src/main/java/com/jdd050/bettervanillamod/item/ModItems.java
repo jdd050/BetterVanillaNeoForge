@@ -35,6 +35,20 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
+    /* Misc */
+    public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
+            () -> new HammerItem(Tiers.IRON, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.IRON, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
+    public static final DeferredItem<Item> GOLD_HAMMER = ITEMS.register("gold_hammer",
+            () -> new HammerItem(Tiers.GOLD, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.GOLD, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
+    public static final DeferredItem<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
+            () -> new HammerItem(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.DIAMOND, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
+    public static final DeferredItem<Item> NETHERITE_HAMMER = ITEMS.register("netherite_hammer",
+            () -> new HammerItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.NETHERITE, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
+
     /* Custom Equipment - Wood Tier */
     public static final DeferredItem<Item> WOOD_HELMET = ITEMS.register("wood_helmet",
             () -> new ArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
@@ -73,6 +87,9 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(9)))
     );
+    public static final DeferredItem<HammerItem> STONE_HAMMER = ITEMS.register("stone_hammer",
+            () -> new HammerItem(Tiers.STONE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(Tiers.STONE, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
     /* Custom Equipment - Netherrack Tier */
     public static final DeferredItem<Item> NETHERRACK_HELMET = ITEMS.register("netherrack_helmet",
@@ -91,7 +108,6 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(11)))
     );
-
     public static final DeferredItem<Item> NETHERRACK_SWORD = ITEMS.register("netherrack_sword",
             () -> new SwordItem(ModToolTiers.NETHERRACK, new Item.Properties()
                     .attributes(SwordItem.createAttributes(ModToolTiers.NETHERRACK, SWORD_ATK_DMG, SWORD_ATK_SPD))
@@ -112,6 +128,9 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.NETHERRACK, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.NETHERRACK, HOE_ATK_DMG, HOE_ATK_SPD))
             ));
+    public static final DeferredItem<Item> NETHERRACK_HAMMER = ITEMS.register("netherrack_hammer",
+            () -> new HammerItem(ModToolTiers.NETHERRACK, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.NETHERRACK, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
 
     /* Custom Equipment - Copper Tier */
@@ -154,6 +173,9 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.COPPER, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.COPPER, HOE_ATK_DMG, HOE_ATK_SPD)))
     );
+    public static final DeferredItem<Item> COPPER_HAMMER = ITEMS.register("copper_hammer",
+            () -> new HammerItem(ModToolTiers.COPPER, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.COPPER, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
     /* Custom Equipment - Amethyst Tier */
     public static final DeferredItem<Item> AMETHYST_HELMET = ITEMS.register("amethyst_helmet",
@@ -195,6 +217,9 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.AMETHYST, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.AMETHYST, HOE_ATK_DMG, HOE_ATK_SPD)))
     );
+    public static final DeferredItem<Item> AMETHYST_HAMMER = ITEMS.register("amethyst_hammer",
+            () -> new PickaxeItem(ModToolTiers.AMETHYST, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.AMETHYST, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
     /* Custom Equipment - Quartz Tier */
     public static final DeferredItem<Item> QUARTZ_HELMET = ITEMS.register("quartz_helmet",
@@ -236,6 +261,9 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.QUARTZ, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.QUARTZ, HOE_ATK_DMG, HOE_ATK_SPD)))
     );
+    public static final DeferredItem<Item> QUARTZ_HAMMER = ITEMS.register("quartz_hammer",
+            () -> new HammerItem(ModToolTiers.QUARTZ, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.QUARTZ, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
     /* Custom Equipment - Emerald */
     public static final DeferredItem<Item> EMERALD_HELMET = ITEMS.register("emerald_helmet",
@@ -277,5 +305,8 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.EMERALD, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.EMERALD, HOE_ATK_DMG, HOE_ATK_SPD)))
     );
+    public static final DeferredItem<Item> EMERALD_HAMMER = ITEMS.register("emerald_hammer",
+            () -> new HammerItem(ModToolTiers.EMERALD, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.EMERALD, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
 }
