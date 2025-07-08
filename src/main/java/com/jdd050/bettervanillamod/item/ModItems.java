@@ -218,7 +218,7 @@ public class ModItems {
                     .attributes(HoeItem.createAttributes(ModToolTiers.AMETHYST, HOE_ATK_DMG, HOE_ATK_SPD)))
     );
     public static final DeferredItem<Item> AMETHYST_HAMMER = ITEMS.register("amethyst_hammer",
-            () -> new PickaxeItem(ModToolTiers.AMETHYST, new Item.Properties()
+            () -> new HammerItem(ModToolTiers.AMETHYST, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(ModToolTiers.AMETHYST, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
 
     /* Custom Equipment - Quartz Tier */
