@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = BetterVanillaMod.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = BetterVanillaMod.MODID)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
@@ -41,5 +41,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new ModItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
         // Mod recipe provider
         generator.addProvider(event.includeServer(), new ModRecipeProvider(packOutput, lookupProvider));
+        // Mod Datapack Provider
+        generator.addProvider(event.includeServer(), new ModDatapackProvider(packOutput, lookupProvider));
     }
 }

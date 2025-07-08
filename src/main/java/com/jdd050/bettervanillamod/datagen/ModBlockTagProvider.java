@@ -20,10 +20,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.AMETHYST_GEM_ORE.get());
+                .add(ModBlocks.AMETHYST_GEM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(ModBlocks.AMETHYST_GEM_ORE.get());
+                .add(ModBlocks.AMETHYST_GEM_ORE.get())
+                .add(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get());
 
         tag(ModTags.Blocks.NEEDS_COPPER_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);

@@ -25,6 +25,13 @@ public class ModBlocks {
                     .sound(SoundType.AMETHYST)
             ));
 
+    public static final DeferredBlock<Block> DEEPSLATE_AMETHYST_GEM_ORE = registerBlock("deepslate_amethyst_gem_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.AMETHYST)
+            ));
+
     private static <T extends Block> void registerBlockItem(String name, Supplier<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }

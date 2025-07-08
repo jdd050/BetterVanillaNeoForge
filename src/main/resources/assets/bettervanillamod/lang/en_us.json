@@ -1,5 +1,6 @@
 {
   "block.bettervanillamod.amethyst_gem_ore": "Amethyst Gem Ore",
+  "block.bettervanillamod.deepslate_amethyst_gem_ore": "Deepslate Amethyst Gem Ore",
 
 
   "item.bettervanillamod.amethyst_gem": "Amethyst Gem",
@@ -77,5 +78,7 @@
   "item.bettervanillamod.emerald_hammer": "Emerald Hammer",
 
 
-  "creativetab.bettervanillamod.tab": "BetterVanillaMod Tab"
+  "creativetab.bettervanillamod.tools_tab": "BetterVanillaMod Tools",
+  "creativetab.bettervanillamod.armor_tab": "BetterVanillaMod Armor",
+  "creativetab.bettervanillamod.misc_tab": "BetterVanillaMod Miscellaneous"
 }

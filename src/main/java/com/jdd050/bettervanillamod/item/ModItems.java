@@ -2,6 +2,7 @@ package com.jdd050.bettervanillamod.item;
 
 import com.jdd050.bettervanillamod.BetterVanillaMod;
 import com.jdd050.bettervanillamod.item.custom.HammerItem;
+import com.jdd050.bettervanillamod.item.custom.ModArmorItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -51,19 +52,19 @@ public class ModItems {
 
     /* Custom Equipment - Wood Tier */
     public static final DeferredItem<Item> WOOD_HELMET = ITEMS.register("wood_helmet",
-            () -> new ArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                             .durability(ArmorItem.Type.HELMET.getDurability(4)))
     );
     public static final DeferredItem<Item> WOOD_CHESTPLATE = ITEMS.register("wood_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                             .durability(ArmorItem.Type.CHESTPLATE.getDurability(4)))
     );
     public static final DeferredItem<Item> WOOD_LEGGINGS = ITEMS.register("wood_leggings",
-            () -> new ArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                             .durability(ArmorItem.Type.LEGGINGS.getDurability(4)))
     );
     public static final DeferredItem<Item> WOOD_BOOTS = ITEMS.register("wood_boots",
-            () -> new ArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.WOOD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                             .durability((ArmorItem.Type.BOOTS.getDurability(4))))
     );
     public static final DeferredItem<HammerItem> WOOD_HAMMER = ITEMS.register("wood_hammer",
@@ -72,19 +73,19 @@ public class ModItems {
 
     /* Custom Equipment - Stone Tier */
     public static final DeferredItem<Item> STONE_HELMET = ITEMS.register("stone_helmet",
-            () -> new ArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                     .durability(ArmorItem.Type.HELMET.getDurability(9)))
     );
     public static final DeferredItem<Item> STONE_CHESTPLATE = ITEMS.register("stone_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .durability(ArmorItem.Type.CHESTPLATE.getDurability(9)))
     );
     public static final DeferredItem<Item> STONE_LEGGINGS = ITEMS.register("stone_leggings",
-            () -> new ArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .durability(ArmorItem.Type.LEGGINGS.getDurability(9)))
     );
     public static final DeferredItem<Item> STONE_BOOTS = ITEMS.register("stone_boots",
-            () -> new ArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.STONE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(9)))
     );
     public static final DeferredItem<HammerItem> STONE_HAMMER = ITEMS.register("stone_hammer",
@@ -93,19 +94,19 @@ public class ModItems {
 
     /* Custom Equipment - Netherrack Tier */
     public static final DeferredItem<Item> NETHERRACK_HELMET = ITEMS.register("netherrack_helmet",
-            () -> new ArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                     .durability(ArmorItem.Type.HELMET.getDurability(11)))
     );
     public static final DeferredItem<Item> NETHERRACK_CHESTPLATE = ITEMS.register("netherrack_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .durability(ArmorItem.Type.CHESTPLATE.getDurability(11)))
     );
     public static final DeferredItem<Item> NETHERRACK_LEGGINGS = ITEMS.register("netherrack_leggings",
-            () -> new ArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .durability(ArmorItem.Type.LEGGINGS.getDurability(11)))
     );
     public static final DeferredItem<Item> NETHERRACK_BOOTS = ITEMS.register("netherrack_boots",
-            () -> new ArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(11)))
     );
     public static final DeferredItem<Item> NETHERRACK_SWORD = ITEMS.register("netherrack_sword",
@@ -135,19 +136,19 @@ public class ModItems {
 
     /* Custom Equipment - Copper Tier */
     public static final DeferredItem<Item> COPPER_HELMET = ITEMS.register("copper_helmet",
-            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                     .durability(ArmorItem.Type.HELMET.getDurability(13)))
     );
     public static final DeferredItem<Item> COPPER_CHESTPLATE = ITEMS.register("copper_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .durability(ArmorItem.Type.CHESTPLATE.getDurability(13)))
     );
     public static final DeferredItem<Item> COPPER_LEGGINGS = ITEMS.register("copper_leggings",
-            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .durability(ArmorItem.Type.LEGGINGS.getDurability(13)))
     );
     public static final DeferredItem<Item> COPPER_BOOTS = ITEMS.register("copper_boots",
-            () -> new ArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(13)))
     );
 
@@ -179,19 +180,19 @@ public class ModItems {
 
     /* Custom Equipment - Amethyst Tier */
     public static final DeferredItem<Item> AMETHYST_HELMET = ITEMS.register("amethyst_helmet",
-            () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                     .durability(ArmorItem.Type.HELMET.getDurability(27)))
     );
     public static final DeferredItem<Item> AMETHYST_CHESTPLATE = ITEMS.register("amethyst_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .durability(ArmorItem.Type.CHESTPLATE.getDurability(27)))
     );
     public static final DeferredItem<Item> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings",
-            () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .durability(ArmorItem.Type.LEGGINGS.getDurability(27)))
     );
     public static final DeferredItem<Item> AMETHYST_BOOTS = ITEMS.register("amethyst_boots",
-            () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(27)))
     );
 
@@ -223,19 +224,19 @@ public class ModItems {
 
     /* Custom Equipment - Quartz Tier */
     public static final DeferredItem<Item> QUARTZ_HELMET = ITEMS.register("quartz_helmet",
-            () -> new ArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                     .durability(ArmorItem.Type.HELMET.getDurability(27)))
     );
     public static final DeferredItem<Item> QUARTZ_CHESTPLATE = ITEMS.register("quartz_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .durability(ArmorItem.Type.CHESTPLATE.getDurability(27)))
     );
     public static final DeferredItem<Item> QUARTZ_LEGGINGS = ITEMS.register("quartz_leggings",
-            () -> new ArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .durability(ArmorItem.Type.LEGGINGS.getDurability(27)))
     );
     public static final DeferredItem<Item> QUARTZ_BOOTS = ITEMS.register("quartz_boots",
-            () -> new ArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.QUARTZ_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(27)))
     );
 
@@ -267,19 +268,19 @@ public class ModItems {
 
     /* Custom Equipment - Emerald */
     public static final DeferredItem<Item> EMERALD_HELMET = ITEMS.register("emerald_helmet",
-            () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()
                     .durability(ArmorItem.Type.HELMET.getDurability(34)))
     );
     public static final DeferredItem<Item> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()
                     .durability(ArmorItem.Type.CHESTPLATE.getDurability(34)))
     );
     public static final DeferredItem<Item> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings",
-            () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()
                     .durability(ArmorItem.Type.LEGGINGS.getDurability(34)))
     );
     public static final DeferredItem<Item> EMERALD_BOOTS = ITEMS.register("emerald_boots",
-            () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
+            () -> new ModArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()
                     .durability(ArmorItem.Type.BOOTS.getDurability(34)))
     );
 

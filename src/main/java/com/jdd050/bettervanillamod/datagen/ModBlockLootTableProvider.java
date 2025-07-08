@@ -32,6 +32,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.AMETHYST_GEM_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.AMETHYST_GEM_ORE.get(), ModItems.AMETHYST_GEM.get(), 2, 5));
+
+        this.add(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get(), ModItems.AMETHYST_GEM.get()));
+
+        this.add(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get(), ModItems.AMETHYST_GEM.get(), 2, 5));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

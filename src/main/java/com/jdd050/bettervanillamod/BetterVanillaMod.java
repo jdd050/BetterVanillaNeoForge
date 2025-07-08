@@ -1,6 +1,7 @@
 package com.jdd050.bettervanillamod;
 
 import com.jdd050.bettervanillamod.block.ModBlocks;
+import com.jdd050.bettervanillamod.event.ModEvents;
 import com.jdd050.bettervanillamod.item.ModCreativeModeTabs;
 import com.jdd050.bettervanillamod.item.ModItems;
 import org.slf4j.Logger;
