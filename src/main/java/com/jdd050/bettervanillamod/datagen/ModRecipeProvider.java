@@ -5,6 +5,7 @@ import com.jdd050.bettervanillamod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
@@ -203,6 +204,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
     }
 
+    private static void makeTrimSmithing(RecipeOutput pRecipeOutput, Item template, ResourceLocation location) {
+        trimSmithing(pRecipeOutput, template, location);
+    }
+
+    private static void makeStickRecipe(RecipeOutput pRecipeOutput, Item result, Item material, String unlockRequirement) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result)
+                .pattern("   ")
+                .pattern(" X ")
+                .pattern(" X ")
+                .define('X', material)
+                .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
+    }
+
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         // smelting list
@@ -212,6 +226,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AMETHYST_GEM.get())
                 .requires(Items.AMETHYST_SHARD, 2)
                 .unlockedBy("has_amethyst_shard", has(Items.AMETHYST_SHARD)).save(pRecipeOutput);
+
+        makeTrimSmithing(pRecipeOutput, ModItems.AMETHYST_GEM_SMITHING_TEMPLATE.get(), ResourceLocation.fromNamespaceAndPath(BetterVanillaMod.MODID, "amethyst_gem_pattern"));
+
+        makeStickRecipe(pRecipeOutput, ModItems.STONE_ROD.get(), Items.COBBLESTONE, "has_cobblestone");
+        makeStickRecipe(pRecipeOutput, ModItems.NETHER_ROD.get(), Items.NETHERRACK, "has_netherrack");
+        makeStickRecipe(pRecipeOutput, ModItems.COPPER_ROD.get(), Items.COPPER_INGOT, "has_copper_ingot");
+        makeStickRecipe(pRecipeOutput, ModItems.IRON_ROD.get(), Items.IRON_INGOT, "has_iron_ingot");
+        makeStickRecipe(pRecipeOutput, ModItems.GOLD_ROD.get(), Items.GOLD_INGOT, "has_gold_ingot");
+        makeStickRecipe(pRecipeOutput, ModItems.QUARTZ_CHUNK.get(), Items.QUARTZ, "has_quartz");
+        makeStickRecipe(pRecipeOutput, ModItems.AMETHYST_CHUNK.get(), ModItems.AMETHYST_GEM.get(), "has_amethyst_gem");
+        makeStickRecipe(pRecipeOutput, ModItems.DIAMOND_CHUNK.get(), Items.DIAMOND, "has_diamond");
+        makeStickRecipe(pRecipeOutput, ModItems.EMERALD_ROD.get(), Items.EMERALD, "has_emerald");
+        makeStickRecipe(pRecipeOutput, ModItems.NETHERITE_ROD.get(), Items.NETHERITE_INGOT, "has_netherite_ingot");
+
+
+        /* Misc Tools */
+        makeHammerRecipe(pRecipeOutput, ModItems.IRON_HAMMER.get(), Items.IRON_INGOT, "has_iron_ingot");
+        makeHammerRecipe(pRecipeOutput, ModItems.GOLD_HAMMER.get(), Items.GOLD_INGOT, "has_gold_ingot");
+        makeHammerRecipe(pRecipeOutput, ModItems.DIAMOND_HAMMER.get(), Items.DIAMOND, "has_diamond");
+        makeHammerRecipe(pRecipeOutput, ModItems.NETHERITE_HAMMER.get(), Items.NETHERITE_INGOT, "has_netherite_ingot");
 
         /* WOOD TIER RECIPES */
         makeHelmetRecipe(pRecipeOutput, ModItems.WOOD_HELMET.get(), ItemTags.PLANKS, "has_planks");

@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
@@ -14,6 +15,7 @@ import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 
@@ -40,7 +42,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.AMETHYST_GEM.get());
         // adds all the tools and armors
         for (DeferredHolder<Item, ? extends Item> item : ModItems.ITEMS.getEntries()) {
             String[] parts = item.getId().toString().split("_");
@@ -51,7 +52,11 @@ public class ModItemModelProvider extends ItemModelProvider {
                         break;
                     case "helmet", "chestplate", "leggings", "boots":
                         trimmedArmorItem(item);
+                        break;
                     default:
+                        if (!(item.get() instanceof BlockItem)) {
+                            basicItem(item.get());
+                        }
                         break;
                 }
             }

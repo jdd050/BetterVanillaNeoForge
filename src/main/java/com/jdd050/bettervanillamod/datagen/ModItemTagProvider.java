@@ -22,6 +22,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         // custom item tags go here
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.AMETHYST_GEM.get());
+
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.AMETHYST_GEM_SMITHING_TEMPLATE.get());
+
         for (DeferredHolder<Item, ? extends Item> item : ModItems.ITEMS.getEntries()) {
             String[] parts = item.getId().toString().split("_");
             for (String part : parts) {

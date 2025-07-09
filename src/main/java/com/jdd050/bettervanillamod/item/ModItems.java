@@ -3,6 +3,7 @@ package com.jdd050.bettervanillamod.item;
 import com.jdd050.bettervanillamod.BetterVanillaMod;
 import com.jdd050.bettervanillamod.item.custom.HammerItem;
 import com.jdd050.bettervanillamod.item.custom.ModArmorItem;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -31,10 +32,25 @@ public class ModItems {
     //public static final DeferredItem<Item> REDSTONE_INGOT = ITEMS.register("redstone_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> AMETHYST_GEM = ITEMS.register("amethyst_gem", () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> STONE_ROD = ITEMS.register("stone_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHER_ROD = ITEMS.register("nether_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COPPER_ROD = ITEMS.register("copper_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_ROD = ITEMS.register("iron_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GOLD_ROD = ITEMS.register("gold_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> QUARTZ_CHUNK = ITEMS.register("quartz_chunk", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMETHYST_CHUNK = ITEMS.register("amethyst_chunk", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIAMOND_CHUNK = ITEMS.register("diamond_chunk", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMERALD_ROD = ITEMS.register("emerald_rod", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHERITE_ROD = ITEMS.register("netherite_rod", () -> new Item(new Item.Properties()));
+
     // Item registration method
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    /* Armor Trims */
+    public static final DeferredItem<Item> AMETHYST_GEM_SMITHING_TEMPLATE = ITEMS.register("amethyst_gem_smithing_template",
+            () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(BetterVanillaMod.MODID, "amethyst_gem_pattern")));
 
     /* Misc */
     public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",

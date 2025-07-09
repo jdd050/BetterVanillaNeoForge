@@ -1,7 +1,8 @@
 package com.jdd050.bettervanillamod;
 
 import com.jdd050.bettervanillamod.block.ModBlocks;
-import com.jdd050.bettervanillamod.event.ModEvents;
+import com.jdd050.bettervanillamod.effect.ModEffects;
+import com.jdd050.bettervanillamod.effect.RegrowthEffect;
 import com.jdd050.bettervanillamod.item.ModCreativeModeTabs;
 import com.jdd050.bettervanillamod.item.ModItems;
 import org.slf4j.Logger;
@@ -40,6 +41,8 @@ public class BetterVanillaMod {
         ModItems.register(modEventBus);
         // Register blocks event bus
         ModBlocks.register(modEventBus);
+        // Register effect event bus
+        ModEffects.register(modEventBus);
         // Register creative tabs event bus
         ModCreativeModeTabs.register(modEventBus);
         // Register the item to a creative tab

@@ -2,8 +2,19 @@
   "block.bettervanillamod.amethyst_gem_ore": "Amethyst Gem Ore",
   "block.bettervanillamod.deepslate_amethyst_gem_ore": "Deepslate Amethyst Gem Ore",
 
-
   "item.bettervanillamod.amethyst_gem": "Amethyst Gem",
+  "item.bettervanillamod.amethyst_gem_smithing_template": "Amethyst Gem Smithing Template",
+
+  "item.bettervanillamod.stone_rod": "Stone Rod",
+  "item.bettervanillamod.nether_rod": "Nether Rod",
+  "item.bettervanillamod.copper_rod": "Copper Rod",
+  "item.bettervanillamod.iron_rod": "Iron Rod",
+  "item.bettervanillamod.gold_rod": "Gold Rod",
+  "item.bettervanillamod.quartz_chunk": "Quartz Chunk",
+  "item.bettervanillamod.amethyst_chunk": "Amethyst Chunk",
+  "item.bettervanillamod.diamond_chunk": "Diamond Chunk",
+  "item.bettervanillamod.emerald_rod": "Emerald Rod",
+  "item.bettervanillamod.netherite_rod": "Netherite Rod",
 
   "item.bettervanillamod.iron_hammer": "Iron Hammer",
   "item.bettervanillamod.gold_hammer": "Golden Hammer",
@@ -80,5 +91,10 @@
 
   "creativetab.bettervanillamod.tools_tab": "BetterVanillaMod Tools",
   "creativetab.bettervanillamod.armor_tab": "BetterVanillaMod Armor",
-  "creativetab.bettervanillamod.misc_tab": "BetterVanillaMod Miscellaneous"
+  "creativetab.bettervanillamod.misc_tab": "BetterVanillaMod Miscellaneous",
+
+  "trim_pattern.bettervanillamod.amethyst_gem_pattern": "Amethyst Gem Armor Trim",
+  "trim_material.bettervanillamod.amethyst_gem_trim_material": "Amethyst Gem Material",
+
+  "effect.bettervanillamod.regrowth": "Regrowth"
 }

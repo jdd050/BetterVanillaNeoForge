@@ -1,0 +1,9 @@
+{
+  "asset_name": "amethyst_gem_trim_material",
+  "description": {
+    "color": "#D884FF",
+    "translate": "trim_material.bettervanillamod.amethyst_gem_trim_material"
+  },
+  "ingredient": "bettervanillamod:amethyst_gem",
+  "item_model_index": 1.0
+}

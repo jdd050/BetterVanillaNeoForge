@@ -1,0 +1,8 @@
+{
+  "asset_id": "bettervanillamod:amethyst_gem_pattern",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.bettervanillamod.amethyst_gem_pattern"
+  },
+  "template_item": "bettervanillamod:amethyst_gem_smithing_template"
+}

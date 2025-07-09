@@ -1,6 +1,7 @@
 package com.jdd050.bettervanillamod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import com.jdd050.bettervanillamod.effect.ModEffects;
 import com.jdd050.bettervanillamod.item.ModArmorMaterials;
 import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -20,6 +21,8 @@ public class ModArmorItem extends ArmorItem {
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
                     .put(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false)))
+                    .put(ModArmorMaterials.WOOD_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(ModEffects.REGROWTH_EFFECT, 200, 1, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
