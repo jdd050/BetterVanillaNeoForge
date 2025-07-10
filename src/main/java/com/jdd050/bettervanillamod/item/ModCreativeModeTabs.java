@@ -28,7 +28,7 @@ public class ModCreativeModeTabs {
                             for (String part : parts) {
                                 part = part.toLowerCase();
                                 switch (part) {
-                                    case "sword", "pickaxe", "shovel", "axe", "hoe", "hammer":
+                                    case "pickaxe", "shovel", "axe", "hoe", "hammer":
                                         output.accept(item.get());
                                 }
                             }
@@ -59,7 +59,7 @@ public class ModCreativeModeTabs {
                         // These are suffixes that identify tools and armor
                         List<String> toolAndArmorSuffixes = List.of(
                                 "sword", "pickaxe", "shovel", "axe", "hoe", "hammer",
-                                "helmet", "chestplate", "leggings", "boots"
+                                "helmet", "chestplate", "leggings", "boots", "bow"
                         );
 
                         for (DeferredHolder<Item, ? extends Item> item : ModItems.ITEMS.getEntries()) {
@@ -74,6 +74,22 @@ public class ModCreativeModeTabs {
                         }
                     })
                     .build());
+
+    public static final Supplier<CreativeModeTab> WEAPONS_TAB = CREATIVE_MODE_TABS.register("weapons_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack((ItemLike) ModItems.NETHERRACK_SWORD))
+                    .title(Component.translatable("creativetab.bettervanillamod.weapons_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        for (DeferredHolder<Item, ? extends Item> item : ModItems.ITEMS.getEntries()) {
+                            String[] parts = item.getId().toString().split("_");
+                            for (String part : parts) {
+                                part = part.toLowerCase();
+                                switch (part) {
+                                    case "sword", "bow", "hammer":
+                                        output.accept(item.get());
+                                }
+                            }
+                        }
+                    }).build());
 
 
 

@@ -109,6 +109,22 @@ public class ModItemTagProvider extends ItemTagsProvider {
                         tag(ItemTags.MINING_LOOT_ENCHANTABLE)
                                 .add(item.get());
                         break;
+                    case "hammer":
+                        tag(ItemTags.PICKAXES)
+                                .add(item.get());
+                        tag(ItemTags.MINING_ENCHANTABLE)
+                                .add(item.get());
+                        tag(ItemTags.MINING_LOOT_ENCHANTABLE)
+                                .add(item.get());
+                        tag(ItemTags.SWORDS)
+                                .add(item.get());
+                        tag(ItemTags.SWORD_ENCHANTABLE)
+                                .add(item.get());
+                        break;
+                    case "bow":
+                        tag(ItemTags.BOW_ENCHANTABLE)
+                                .add(item.get());
+                        break;
                 }
             }
 

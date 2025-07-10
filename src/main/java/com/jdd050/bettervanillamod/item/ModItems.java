@@ -5,6 +5,7 @@ import com.jdd050.bettervanillamod.item.custom.HammerItem;
 import com.jdd050.bettervanillamod.item.custom.ModArmorItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -65,6 +66,18 @@ public class ModItems {
     public static final DeferredItem<Item> NETHERITE_HAMMER = ITEMS.register("netherite_hammer",
             () -> new HammerItem(Tiers.NETHERITE, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(Tiers.NETHERITE, HAMMER_ATK_DMG, HAMMER_ATK_SPD))));
+
+    /* Bows */
+    public static final DeferredItem<Item> STONE_BOW = ITEMS.register("stone_bow", ModBowTiers::stone);
+    public static final DeferredItem<Item> NETHERRACK_BOW = ITEMS.register("netherrack_bow", ModBowTiers::netherrack);
+    public static final DeferredItem<Item> COPPER_BOW = ITEMS.register("copper_bow", ModBowTiers::copper);
+    public static final DeferredItem<Item> IRON_BOW = ITEMS.register("iron_bow", ModBowTiers::iron);
+    public static final DeferredItem<Item> QUARTZ_BOW = ITEMS.register("quartz_bow", ModBowTiers::quartz);
+    public static final DeferredItem<Item> AMETHYST_BOW = ITEMS.register("amethyst_bow", ModBowTiers::amethyst);
+    public static final DeferredItem<Item> GOLD_BOW = ITEMS.register("gold_bow", ModBowTiers::gold);
+    public static final DeferredItem<Item> DIAMOND_BOW = ITEMS.register("diamond_bow", ModBowTiers::diamond);
+    public static final DeferredItem<Item> EMERALD_BOW = ITEMS.register("emerald_bow", ModBowTiers::emerald);
+    public static final DeferredItem<Item> NETHERITE_BOW = ITEMS.register("netherite_bow", ModBowTiers::netherite);
 
     /* Custom Equipment - Wood Tier */
     public static final DeferredItem<Item> WOOD_HELMET = ITEMS.register("wood_helmet",

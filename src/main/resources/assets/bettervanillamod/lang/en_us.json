@@ -5,6 +5,17 @@
   "item.bettervanillamod.amethyst_gem": "Amethyst Gem",
   "item.bettervanillamod.amethyst_gem_smithing_template": "Amethyst Gem Smithing Template",
 
+  "item.bettervanillamod.stone_bow": "Stone Bow",
+  "item.bettervanillamod.netherrack_bow": "Netherrack Bow",
+  "item.bettervanillamod.copper_bow": "Copper Bow",
+  "item.bettervanillamod.iron_bow": "Iron Bow",
+  "item.bettervanillamod.quartz_bow": "Quartz Bow",
+  "item.bettervanillamod.amethyst_bow": "Amethyst Bow",
+  "item.bettervanillamod.gold_bow": "Gold Bow",
+  "item.bettervanillamod.diamond_bow": "Diamond Bow",
+  "item.bettervanillamod.emerald_bow": "Emerald Bow",
+  "item.bettervanillamod.netherite_bow": "Netherite Bow",
+
   "item.bettervanillamod.stone_rod": "Stone Rod",
   "item.bettervanillamod.nether_rod": "Nether Rod",
   "item.bettervanillamod.copper_rod": "Copper Rod",
@@ -92,6 +103,7 @@
   "creativetab.bettervanillamod.tools_tab": "BetterVanillaMod Tools",
   "creativetab.bettervanillamod.armor_tab": "BetterVanillaMod Armor",
   "creativetab.bettervanillamod.misc_tab": "BetterVanillaMod Miscellaneous",
+  "creativetab.bettervanillamod.weapons_tab": "BetterVanillaMod Weapons",
 
   "trim_pattern.bettervanillamod.amethyst_gem_pattern": "Amethyst Gem Armor Trim",
   "trim_material.bettervanillamod.amethyst_gem_trim_material": "Amethyst Gem Material",

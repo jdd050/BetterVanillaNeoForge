@@ -53,6 +53,9 @@ public class ModItemModelProvider extends ItemModelProvider {
                     case "helmet", "chestplate", "leggings", "boots":
                         trimmedArmorItem(item);
                         break;
+                    case "bow":
+                        bowItem(item);
+                        break;
                     default:
                         if (!(item.get() instanceof BlockItem)) {
                             basicItem(item.get());
@@ -113,6 +116,33 @@ public class ModItemModelProvider extends ItemModelProvider {
                                 ResourceLocation.fromNamespaceAndPath(MOD_ID,
                                         "item/" + itemRegistryObject.getId().getPath()));
                 });
+            }
+        }
+
+        private void bowItem(DeferredHolder<Item, ? extends Item> item) {
+            String name = item.getId().getPath();
+
+            getBuilder(name)
+                    .parent(getExistingFile(mcLoc("item/bow")))
+                    .texture("layer0", modLoc("item/" + name))
+                    .override()
+                        .predicate(mcLoc("pulling"), 1)
+                        .model(new ModelFile.UncheckedModelFile(modLoc("item/" + name + "_pulling_0")))
+                    .end()
+                    .override()
+                        .predicate(mcLoc("pulling"), 1)
+                        .predicate(mcLoc("pull"), 0.65F)
+                        .model(new ModelFile.UncheckedModelFile(modLoc("item/" + name + "_pulling_1")))
+                    .end()
+                    .override()
+                        .predicate(mcLoc("pulling"), 1)
+                        .predicate(mcLoc("pull"), 0.9F)
+                        .model(new ModelFile.UncheckedModelFile(modLoc("item/" + name + "_pulling_2")))
+                    .end();
+
+            for (int i = 0; i < 3; i++) {
+                withExistingParent(name + "_pulling_" + i, mcLoc("item/bow"))
+                        .texture("layer0", modLoc("item/" + name + "_pulling_" + i));
             }
         }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/bow",
+  "textures": {
+    "layer0": "bettervanillamod:item/amethyst_bow_pulling_1"
+  }
+}

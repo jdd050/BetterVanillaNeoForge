@@ -217,6 +217,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
     }
 
+    private static void makeBowRecipe(RecipeOutput pRecipeOutput, Item result, Item material, String unlockRequirement) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result)
+                .pattern(" XY")
+                .pattern("X Y")
+                .pattern(" XY")
+                .define('X', material)
+                .define('Y', Items.STRING)
+                .unlockedBy(unlockRequirement, has(material)).save(pRecipeOutput);
+    }
+
     @Override
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         // smelting list
@@ -239,6 +249,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         makeStickRecipe(pRecipeOutput, ModItems.DIAMOND_CHUNK.get(), Items.DIAMOND, "has_diamond");
         makeStickRecipe(pRecipeOutput, ModItems.EMERALD_ROD.get(), Items.EMERALD, "has_emerald");
         makeStickRecipe(pRecipeOutput, ModItems.NETHERITE_ROD.get(), Items.NETHERITE_INGOT, "has_netherite_ingot");
+
+        /* BOW RECIPES */
+        makeBowRecipe(pRecipeOutput, ModItems.STONE_BOW.get(), ModItems.STONE_ROD.get(), "has_stone_rod");
+        makeBowRecipe(pRecipeOutput, ModItems.NETHERRACK_BOW.get(), ModItems.NETHER_ROD.get(), "has_nether_rod");
+        makeBowRecipe(pRecipeOutput, ModItems.COPPER_BOW.get(), ModItems.COPPER_ROD.get(), "has_copper_rod");
+        makeBowRecipe(pRecipeOutput, ModItems.IRON_BOW.get(), ModItems.IRON_ROD.get(), "has_iron_rod");
+        makeBowRecipe(pRecipeOutput, ModItems.QUARTZ_BOW.get(), ModItems.QUARTZ_CHUNK.get(), "has_quartz_chunk");
+        makeBowRecipe(pRecipeOutput, ModItems.AMETHYST_BOW.get(), ModItems.AMETHYST_CHUNK.get(), "has_amethyst_chunk");
+        makeBowRecipe(pRecipeOutput, ModItems.GOLD_BOW.get(), ModItems.GOLD_ROD.get(), "has_gold_rod");
+        makeBowRecipe(pRecipeOutput, ModItems.DIAMOND_BOW.get(), ModItems.DIAMOND_CHUNK.get(), "has_diamond_chunk");
+        makeBowRecipe(pRecipeOutput, ModItems.EMERALD_BOW.get(), ModItems.EMERALD_ROD.get(), "has_emerald_rod");
+        makeBowRecipe(pRecipeOutput, ModItems.NETHERITE_BOW.get(), ModItems.NETHERITE_ROD.get(), "has_netherite_rod");
 
 
         /* Misc Tools */

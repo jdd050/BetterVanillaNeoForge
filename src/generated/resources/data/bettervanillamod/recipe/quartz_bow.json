@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "bettervanillamod:quartz_chunk"
+    },
+    "Y": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " XY",
+    "X Y",
+    " XY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bettervanillamod:quartz_bow"
+  }
+}

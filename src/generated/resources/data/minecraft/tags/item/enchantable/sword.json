@@ -1,3 +1,15 @@
 {
-  "values": []
+  "values": [
+    "bettervanillamod:iron_hammer",
+    "bettervanillamod:gold_hammer",
+    "bettervanillamod:diamond_hammer",
+    "bettervanillamod:netherite_hammer",
+    "bettervanillamod:wood_hammer",
+    "bettervanillamod:stone_hammer",
+    "bettervanillamod:netherrack_hammer",
+    "bettervanillamod:copper_hammer",
+    "bettervanillamod:amethyst_hammer",
+    "bettervanillamod:quartz_hammer",
+    "bettervanillamod:emerald_hammer"
+  ]
 }

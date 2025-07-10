@@ -1,5 +1,6 @@
 package com.jdd050.bettervanillamod;
 
+import com.jdd050.bettervanillamod.util.ModItemProperties;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -27,5 +28,6 @@ public class BetterVanillaModClient {
         // Some client setup code
         BetterVanillaMod.LOGGER.info("HELLO FROM CLIENT SETUP");
         BetterVanillaMod.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        ModItemProperties.addCustomItemProperties();
     }
 }

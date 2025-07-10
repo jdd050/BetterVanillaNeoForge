@@ -1,9 +1,20 @@
 {
   "values": [
+    "bettervanillamod:iron_hammer",
+    "bettervanillamod:gold_hammer",
+    "bettervanillamod:diamond_hammer",
+    "bettervanillamod:netherite_hammer",
+    "bettervanillamod:wood_hammer",
+    "bettervanillamod:stone_hammer",
     "bettervanillamod:netherrack_pickaxe",
+    "bettervanillamod:netherrack_hammer",
     "bettervanillamod:copper_pickaxe",
+    "bettervanillamod:copper_hammer",
     "bettervanillamod:amethyst_pickaxe",
+    "bettervanillamod:amethyst_hammer",
     "bettervanillamod:quartz_pickaxe",
-    "bettervanillamod:emerald_pickaxe"
+    "bettervanillamod:quartz_hammer",
+    "bettervanillamod:emerald_pickaxe",
+    "bettervanillamod:emerald_hammer"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": {
+      "item": "bettervanillamod:stone_rod"
+    },
+    "Y": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " XY",
+    "X Y",
+    " XY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bettervanillamod:stone_bow"
+  }
+}
