@@ -19,10 +19,15 @@ import java.util.Map;
 public class ModArmorItem extends ArmorItem {
     private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>())
-                    .put(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL,
-                            List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 1, false, false)))
                     .put(ModArmorMaterials.WOOD_ARMOR_MATERIAL,
                             List.of(new MobEffectInstance(ModEffects.REGROWTH_EFFECT, 200, 1, false, false)))
+                    .put(ModArmorMaterials.STONE_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 200, 0, false, false),
+                                    new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 0, false, false)))
+                    .put(ModArmorMaterials.NETHERRACK_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 0, false, false)))
+                    .put(ModArmorMaterials.COPPER_ARMOR_MATERIAL,
+                            List.of(new MobEffectInstance(MobEffects.DIG_SPEED, 200, 1, false, false)))
                     .build();
 
     public ModArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {

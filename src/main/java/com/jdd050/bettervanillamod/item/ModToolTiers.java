@@ -28,10 +28,10 @@ public class ModToolTiers {
 
     public static final Tier QUARTZ = new SimpleTier(
             ModTags.Blocks.INCORRECT_FOR_QUARTZ_TOOL,
-            Math.round(Tiers.IRON.getUses() * 2.0F),
-            Tiers.IRON.getSpeed() * 2.0F,
-            Tiers.DIAMOND.getAttackDamageBonus(),
-            Tiers.DIAMOND.getEnchantmentValue(),
+            Math.round(Tiers.IRON.getUses() * 1.5F),
+            Tiers.IRON.getSpeed() * 1.5F,
+            Tiers.DIAMOND.getAttackDamageBonus() * 0.95F,
+            Math.round(Tiers.DIAMOND.getEnchantmentValue() * 1.5F),
             () -> Ingredient.of(Items.QUARTZ)
     );
 
@@ -40,15 +40,15 @@ public class ModToolTiers {
             Math.round(Tiers.IRON.getUses() * 2.0F),
             Tiers.IRON.getSpeed() * 2.0F,
             Tiers.DIAMOND.getAttackDamageBonus(),
-            Tiers.DIAMOND.getEnchantmentValue(),
+            Math.round(Tiers.DIAMOND.getEnchantmentValue() * 2.0F),
             () -> Ingredient.of(ModItems.AMETHYST_GEM)
     );
 
     public static final Tier EMERALD = new SimpleTier(
             ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL,
             Math.round(Tiers.DIAMOND.getUses() * 1.1F),
-            Tiers.DIAMOND.getSpeed() * 0.95F,
-            Tiers.DIAMOND.getAttackDamageBonus() * 1.1F,
+            Tiers.DIAMOND.getSpeed() * 2.0F,
+            Tiers.NETHERITE.getAttackDamageBonus() * 0.90F,
             Math.round(Tiers.DIAMOND.getEnchantmentValue() * 1.75F),
             () -> Ingredient.of(Items.EMERALD)
     );

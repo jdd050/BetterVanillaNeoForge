@@ -19,47 +19,45 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        // Makes amethyst gem ore mineable by pickaxe
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.AMETHYST_GEM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get());
 
+        // Makes amethyst gem ore require iron pickaxe
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.AMETHYST_GEM_ORE.get())
                 .add(ModBlocks.DEEPSLATE_AMETHYST_GEM_ORE.get());
 
-        tag(ModTags.Blocks.NEEDS_COPPER_TOOL)
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
-
-        tag(ModTags.Blocks.NEEDS_AMETHYST_TOOL)
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
-
-        tag(ModTags.Blocks.NEEDS_QUARTZ_TOOL)
-                .addTag(BlockTags.NEEDS_IRON_TOOL);
-
-        tag(ModTags.Blocks.NEEDS_EMERALD_TOOL)
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
-
+        // Assign netherrack and copper tools the same level as stone
         tag(ModTags.Blocks.NEEDS_NETHERRACK_TOOL)
                 .addTag(BlockTags.NEEDS_STONE_TOOL);
-
+        tag(ModTags.Blocks.INCORRECT_FOR_NETHERRACK_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .remove(ModTags.Blocks.NEEDS_NETHERRACK_TOOL);
+        tag(ModTags.Blocks.NEEDS_COPPER_TOOL)
+                .addTag(BlockTags.NEEDS_STONE_TOOL);
         tag(ModTags.Blocks.INCORRECT_FOR_COPPER_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)
                 .remove(ModTags.Blocks.NEEDS_COPPER_TOOL);
 
+        // Assign amethyst and quartz tools the same level as iron
+        tag(ModTags.Blocks.NEEDS_QUARTZ_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
+        tag(ModTags.Blocks.INCORRECT_FOR_QUARTZ_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .remove(ModTags.Blocks.NEEDS_QUARTZ_TOOL);
+        tag(ModTags.Blocks.NEEDS_AMETHYST_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL);
         tag(ModTags.Blocks.INCORRECT_FOR_AMETHYST_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(ModTags.Blocks.NEEDS_AMETHYST_TOOL);
 
-        tag(ModTags.Blocks.INCORRECT_FOR_QUARTZ_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
-                .remove(ModTags.Blocks.NEEDS_QUARTZ_TOOL);
-
+        // Assign emerald tools the same level as diamond
+        tag(ModTags.Blocks.NEEDS_EMERALD_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
         tag(ModTags.Blocks.INCORRECT_FOR_EMERALD_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(ModTags.Blocks.NEEDS_EMERALD_TOOL);
-
-        tag(ModTags.Blocks.INCORRECT_FOR_NETHERRACK_TOOL)
-                .addTag(BlockTags.INCORRECT_FOR_STONE_TOOL)
-                .remove(ModTags.Blocks.NEEDS_NETHERRACK_TOOL);
     }
 }
